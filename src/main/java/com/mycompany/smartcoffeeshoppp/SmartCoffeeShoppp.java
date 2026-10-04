@@ -77,8 +77,7 @@ class Minuman {
         double total = hitungHarga(jumlah);   // memakai versi subclass (dynamic binding)
         return total - (total * diskonPersen / 100);
     }
-
-    // Method yang di-override subclass 
+ 
     public String getJenis() {
         return "Minuman";
     }
@@ -87,7 +86,6 @@ class Minuman {
         return "-";
     }
 
-    // Menampilkan satu baris tabel (memanggil method hasil overriding)
     public void tampilInfo(int no) {
         System.out.printf("| %-3d | %-16s | %-9s | %-7s | %11s | %11s | %-26s |%n",
                 no,
